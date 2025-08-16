@@ -12,7 +12,21 @@
   
 }
 
-.card img {
+.pokemon {
   width: 100%; /* largura de 100% da imagem*/
   border-radius: 8px; /* Cantos arredondados */
+}
+
+.energia-img{
+  position: relative;
+  width: 10%;
+  left: 40%;
+  bottom: 91%;
+}
+
+/* Celular pequeno */
+@media (max-width: 600px) {
+.energia-img {
+    bottom: 89.6%;
+  }
 }

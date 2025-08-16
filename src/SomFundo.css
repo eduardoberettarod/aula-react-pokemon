@@ -85,3 +85,46 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   cursor: pointer;
 }
+
+/* Responsividade da caixa de som */
+@media (max-width: 1024px) {
+  .som-container {
+    left: 2rem;
+    bottom: 2rem;
+  }
+
+  .btn-som {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+
+  .icone-pokebola {
+    width: 24px;
+    height: 24px;
+  }
+
+  input[type="range"] {
+    width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .som-container {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .btn-som {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .icone-pokebola {
+    width: 20px;
+    height: 20px;
+  }
+
+  input[type="range"] {
+    width: 120px;
+  }
+}
