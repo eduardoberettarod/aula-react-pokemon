@@ -8,7 +8,7 @@
   width: 20%;/*coloca o tamanho do card em 20% (verticalmente)*/
   margin: 0 auto; /* margin 0 pra cima e pra baixo e auto pra esquerda e pra direita, isso faz a div ficar centralizada*/
   padding: 10px; /*adiciona um espaço de 10px*/
-  box-shadow: 5px 6px 0 rgb(255, 2, 2); /*sombra da caixa*/
+  box-shadow: 5px 6px 0 #d62828; /*sombra da caixa*/
   
 }
 

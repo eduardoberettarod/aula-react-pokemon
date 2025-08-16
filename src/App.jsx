@@ -1,5 +1,6 @@
 import './App.css'
 import Card from './Card'
+import SomFundo from './SomFundo'
 
 function App() {
   const item1 = {
@@ -66,9 +67,9 @@ function App() {
   return (
     <>
     <div className='container-pokemon'>
-    <img src='src/assets/pokemon.png' className='titulo' />
-    <img src='src/assets/pokebola-vermelha.png' className='pokebola1' />
-     <img src='src/assets/pokebola-branca.png' className='pokebola2' />
+    <img src='./img/pokemon.png' className='titulo' />
+    <img src='./img/pokebola-vermelha.png' className='pokebola1' />
+     <img src='./img/pokebola-branca.png' className='pokebola2' />
     </div>
       <div className='lista'>
         {
@@ -78,6 +79,7 @@ function App() {
         }
       </div>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/mE8E3nT2U70?si=ta58Z0-XqVDbrjzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <SomFundo />
     </>
   )
 }
