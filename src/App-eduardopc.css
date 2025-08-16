@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Container principal */
+.container-pokemon {
+  position: relative;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 0 1rem;
+}
+
+/* Título centralizado */
+.titulo {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Pokébolas decorativas */
+.pokebola1,
+.pokebola2 {
+  position: absolute;
+  width: 10%;
+  height: auto;
+}
+
+.pokebola1 {
+  right: 20%;
+}
+
+.pokebola2 {
+  left: 20%;
+}
+
+/* Lista de Pokémon */
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 30px;
+}
+
+.lista > * {
+  flex: 1 1 calc((100% / 3) - 2rem); /* 3 colunas padrão */
+}
+
+/* Iframe */
+iframe {
+  display: block;
+  position: relative;
+  width: 40%;
+  max-width: 600px;
+  min-width: 280px;
+  margin: 5rem auto;
+  background: #d62828;
+  padding: 7px;
+  border-radius: 16px;
+}
+
+/* Responsividade geral */
+@media (max-width: 1024px) {
+  /* Lista: 2 colunas */
+  .lista > * {
+    flex: 1 1 calc((100% / 2) - 2rem);
+  }
+
+  /* Iframe maior para tablet */
+  iframe {
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Container com menos margem */
+  .container-pokemon {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Pokébolas menores */
+  .pokebola1,
+  .pokebola2 {
+    width: 8%;
+  }
+
+  /* Título menor */
+  .titulo {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Lista: 1 coluna */
+  .lista > * {
+    flex: 1 1 100%;
+  }
+
+  /* Iframe quase toda a largura */
+  iframe {
+    width: 85%;
+    position: relative;
+    margin-right: 50%;
+  }
+
+  /* Container com margens menores */
+  .container-pokemon {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Pokébolas menores e mais próximas */
+  .pokebola1,
+  .pokebola2 {
+    width: 15%;
+  }
+
+  .pokebola1{
+    right: 5%;
+    bottom: 58%;
+    z-index: -1;
+  }
+
+  .pokebola2{
+    left: 5%;
+    top: 58%;
+  }
+
+  /* Título menor */
+  .titulo {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+  }
+}
